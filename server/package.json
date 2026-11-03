@@ -1,0 +1,21 @@
+{
+  "name": "voicemate-server",
+  "version": "1.0.0",
+  "description": "VoiceMate AI backend: Express + SQLite + Gemini intent engine",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server.js",
+    "test:commands": "node scripts/testCommands.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0"
+  }
+}
